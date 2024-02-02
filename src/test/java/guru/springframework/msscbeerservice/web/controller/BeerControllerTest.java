@@ -35,7 +35,7 @@ class BeerControllerTest {
                 .beerName("corona")
                 .beerStyle(BeerStyleEnum.ALE)
                 .build();
-        String value
+
         mockMvc.perform(post("/api/v1/beer/").content(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(status().isOk());
 
